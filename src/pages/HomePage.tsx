@@ -12,11 +12,11 @@ import WhyChooseUs from "../components/whyChooseUs";
 
 const LandingPage = () => {
   return (
-    <div className="font-sans text-gray-800">
+    <div className=" text-gray-800">
       <Header />
       <div className=""></div>
       <section
-        className="relative h-screen bg-cover bg-center flex items-center"
+        className="relative w-full h-[600px] sm:h-[600px] md:h-[600px] lg:h-[600px] bg-cover bg-center flex items-center"
         style={{
           backgroundImage: `url(${heroBg})`,
         }}
