@@ -4,7 +4,7 @@ import Logo from "../assets/svgs/LogoWh.svg";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 bottom-0">
-      <div className="max-w-6xl mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-700">
+      <div className="max-w-6xl mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo */}
         <div className="mb-4 md:mb-0">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Copyright */}
-      <div className="text-center text-xs text-gray-500 py-4 border-t border-gray-700">
+      <div className="text-center text-xs text-gray-500 py-4">
         Copyright © 2025 Optimum Techniques. All rights reserved.
       </div>
     </footer>
