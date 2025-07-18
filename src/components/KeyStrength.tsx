@@ -1,5 +1,6 @@
 import keyStrengthImg from "../assets/images/KeyStrength.png";
 import checkIcon from "../assets/images/Check icon.png";
+import { Link } from "react-router-dom";
 
 const KeyStrength = () => {
   const strengths = [
@@ -13,7 +14,6 @@ const KeyStrength = () => {
     <section className="pt-16 pb-16 bg-white">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          
           {/* Left Column */}
           <div>
             <h2 className="text-[48px] leading-[41.25px] tracking-[-0.8px] font-bold text-black mb-8">
@@ -29,6 +29,15 @@ const KeyStrength = () => {
                 </div>
               ))}
             </div>
+
+            <Link to="/contact">
+              <button
+                className="border border-gray-300
+        rounded-md  hover:shadow-md text-gray-700 text-sm cursor-pointer font-medium py-2 px-4 "
+              >
+                CONTACT US
+              </button>
+            </Link>
           </div>
 
           {/* Right Column */}
@@ -39,7 +48,6 @@ const KeyStrength = () => {
               className="rounded-lg shadow-md w-full h-auto object-cover"
             />
           </div>
-
         </div>
       </div>
     </section>

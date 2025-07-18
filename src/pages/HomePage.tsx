@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroBg from "../assets/images/HeroImage.png";
 import About from "../components/About";
 // import Footer from "../components/footer";
@@ -34,9 +35,11 @@ const LandingPage = () => {
               <br />
               engineering contracting firm
             </h1>
-            <button className="bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium py-2 px-5 rounded">
-              CONTACT US
-            </button>
+            <Link to="/contact">
+              <button className="bg-orange-400 hover:bg-orange-500 text-white text-sm cursor-pointer font-medium py-2 px-4 rounded">
+                CONTACT US
+              </button>
+            </Link>
           </div>
         </div>
       </section>

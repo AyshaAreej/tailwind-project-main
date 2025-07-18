@@ -33,7 +33,7 @@ const WhyChooseUs: React.FC = () => {
       <h2 className="text-[48px] leading-[100%] tracking-[-0.8px] font-bold mb-8 text-center">
         Why choose us?
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {faqs.map((item, idx) => (
           <div key={idx}>
             <h3 className="text-[16px] leading-[27.5px] font-bold mb-1">
