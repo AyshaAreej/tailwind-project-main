@@ -1,12 +1,12 @@
-import VisionIcon from "../assets/svgs/Icon-Interaction.svg";
-import MissionIcon from "../assets/svgs/Icon-Design.svg";
+import VisionIcon from "../assets/svgs/Icon-Design.svg";
+import MissionIcon from "../assets/svgs/Icon-Interaction.svg";
 import ValuesIcon from "../assets/svgs/Icon Integration.svg";
 
 
 
 const VisionMissionValues = () => {
   return (
-    <section className="bg-blue-50 py-16 px-4 sm:px-8 lg:px-20">
+    <section className="bg-vision py-16 px-4 sm:px-8 lg:px-20">
       <p className="max-w-4xl mx-auto text-gray-700 mb-12 text-sm text-center leading-relaxed">
         Optimum Techniques is the trusted partner for safe, sustainable, and high-quality geomembrane installations in the environmental and industrial sectors—driven by integrity, innovation, and a commitment to lasting partnerships.
       </p>

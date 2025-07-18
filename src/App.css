@@ -53,3 +53,13 @@
  max-width: 1280px;
   padding: 2rem;
 }
+.bg-about{
+  background-color: #F8F9FA;
+}
+.bg-vision{
+  background-color: #EDF4FF;
+  padding: 110px;
+}
+.bg-industry{
+  padding: 100px;
+}

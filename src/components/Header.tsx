@@ -1,50 +1,46 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/svgs/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
-      <header className="sticky top-0 z-50 w-full bg-white">
-        <div className="flex justify-between items-center w-full px-4 sm:px-8  py-[21px]">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+      <div className="max-w-[1280px] mx-auto flex justify-between items-center px-4 sm:px-8 py-[21px]">
+        
+        {/* LEFT DIV: Logo */}
+        <div className="flex items-center">
+          <Link to="/">
             <img src={Logo} alt="Logo" className="h-8 w-auto" />
-          </div>
+          </Link>
+        </div>
 
+        {/* RIGHT DIV: Nav + CTA */}
+        <div className="flex items-center space-x-6">
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a
-              href="#about"
-              className="text-sm font-medium text-gray-900 hover:text-blue-700"
-            >
+          <nav className="hidden md:flex space-x-6">
+            <Link to="/about" className="text-sm font-medium text-gray-900 hover:text-blue-700">
               About us
-            </a>
-            <a
-              href="#services"
-              className="text-sm font-medium text-gray-900 hover:text-blue-700"
-            >
+            </Link>
+            <Link to="/services" className="text-sm font-medium text-gray-900 hover:text-blue-700">
               Services
-            </a>
-            <a
-              href="#technical"
-              className="text-sm font-medium text-gray-900 hover:text-blue-700"
-            >
+            </Link>
+            <Link to="/technical" className="text-sm font-medium text-gray-900 hover:text-blue-700">
               Technical Capabilities
-            </a>
-            <a
-              href="#safety"
-              className="text-sm font-medium text-gray-900 hover:text-blue-700"
-            >
+            </Link>
+            <Link to="/safety" className="text-sm font-medium text-gray-900 hover:text-blue-700">
               Safety & Compliance
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
-          <button className="bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium py-2 px-4 rounded">
-            CONTACT US
-          </button>
+          <Link to="/contact">
+            <button className="bg-orange-400 hover:bg-orange-500 text-white text-sm cursor-pointer font-medium py-2 px-4 rounded">
+              CONTACT US
+            </button>
+          </Link>
         </div>
-      </header>
-    </div>
+
+      </div>
+    </header>
   );
 };
 

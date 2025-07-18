@@ -1,10 +1,11 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/svgs/LogoWh.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300 bottom-0">
       <div className="max-w-6xl mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-center border-t border-gray-700">
+        
         {/* Logo */}
         <div className="mb-4 md:mb-0">
           <img src={Logo} alt="Optimum Techniques" className="h-6" />
@@ -12,10 +13,11 @@ const Footer: React.FC = () => {
 
         {/* Links */}
         <div className="flex flex-wrap gap-4 text-sm justify-center md:justify-end">
-          <a href="#about" className="hover:text-white">About us</a>
-          <a href="#services" className="hover:text-white">Services</a>
-          <a href="#technical" className="hover:text-white">Technical Capabilities</a>
-          <a href="#safety" className="hover:text-white">Safety & Compliance</a>
+          <Link to="/about" className="hover:text-white">About us</Link>
+          <Link to="/services" className="hover:text-white">Services</Link>
+          <Link to="/technical" className="hover:text-white">Technical Capabilities</Link>
+          <Link to="/safety" className="hover:text-white">Safety & Compliance</Link>
+          <Link to="/contact" className="hover:text-white">Contact</Link>
         </div>
       </div>
 

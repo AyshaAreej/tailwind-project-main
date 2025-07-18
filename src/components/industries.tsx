@@ -29,8 +29,8 @@ const industries = [
 
 const IndustriesWeServe: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-50 px-4 text-center">
-      <h2 className="text-xl md:text-2xl font-bold mb-8">Industries We Serve</h2>
+    <section className="py-12 bg-gray-50 px-4 text-center bg-industry">
+      <h2 className="text-xl md:text-2xl font-bold mb-8"style={{marginBottom:"40px"}}>Industries We Serve</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  rounded overflow-hidden">
         {industries.map((item, idx) => (
           <div

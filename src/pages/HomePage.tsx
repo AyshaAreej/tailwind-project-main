@@ -1,7 +1,7 @@
 import heroBg from "../assets/images/HeroImage.png";
 import About from "../components/About";
-import Footer from "../components/footer";
-import Header from "../components/Header";
+// import Footer from "../components/footer";
+// import Header from "../components/Header";
 import IndustriesWeServe from "../components/industries";
 import KeyStrength from "../components/KeyStrength";
 import ServicesApplications from "../components/serviceApplication";
@@ -12,8 +12,8 @@ import WhyChooseUs from "../components/whyChooseUs";
 
 const LandingPage = () => {
   return (
-    <div className="font-['Eudoxus_Sans'] text-gray-800">
-      <Header />
+    <div className=" text-gray-800">
+      {/* <Header /> */}
 
       {/* HERO SECTION: Full width, no max-width constraint */}
       <section
@@ -45,11 +45,15 @@ const LandingPage = () => {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <About />
         <KeyStrength />
-        <VisionMissionValues />
+      </div>
+      <VisionMissionValues />
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <section id="services">
           <ServicesApplications />
         </section>
-        <IndustriesWeServe />
+      </div>
+      <IndustriesWeServe />
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <section id="technical">
           <TechnicalCapabilities />
         </section>
@@ -60,7 +64,7 @@ const LandingPage = () => {
       </div>
 
       {/* FOOTER: Full width */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
