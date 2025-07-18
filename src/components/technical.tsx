@@ -8,16 +8,20 @@ import trainingImg from "../assets/images/trainning.png";
 const TechnicalCapabilities: React.FC = () => {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto space-y-16">
-      <h2 className="text-xl md:text-2xl font-bold text-center">Technical Capabilities</h2>
+      
+      {/* Main Section Heading */}
+      <h2 className="text-[36px] leading-[41.25px] tracking-[-0.8px] font-bold text-center">
+        Technical Capabilities
+      </h2>
 
       {/* Equipment & Tools */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <img src={equipmentImg} alt="Equipment & Tools" className="rounded-lg w-full h-auto object-cover" />
         </div>
-        <div>
-          <h4 className="font-bold text-lg mb-4">Equipment & Tools</h4>
-          <ul className="space-y-2">
+        <div style={{marginLeft:"40px"}}>
+          <h4 className="text-[48px] leading-[41.25px] tracking-[-0.8px] font-bold mb-4">Equipment & Tools</h4>
+          <ul className="space-y-2" >
             {[
               "Automatic Welding Machines",
               "Hand Extrusion Welding Tools",
@@ -25,9 +29,9 @@ const TechnicalCapabilities: React.FC = () => {
               "Electric Generators",
               "Compressors, Shovels & Carts"
             ].map((point, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <img src={checkIcon} alt="Check" className="w-4 h-4 mt-1" />
-                <span className="text-sm text-gray-700">{point}</span>
+              <li key={i} className="flex items-center gap-2">
+                <img src={checkIcon} alt="Check" className="w-4 h-4" />
+                <span className="text-[16px] leading-[130%] font-normal text-gray-700">{point}</span>
               </li>
             ))}
           </ul>
@@ -36,9 +40,8 @@ const TechnicalCapabilities: React.FC = () => {
 
       {/* Quality Assurance & Testing */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
-       
         <div>
-          <h4 className="font-bold text-lg mb-4">Quality Assurance & Testing</h4>
+          <h4 className="text-[48px] leading-[41.25px] tracking-[-0.8px] font-bold mb-4">Quality Assurance & Testing</h4>
           <ul className="space-y-2">
             {[
               "Vacuum Testing Equipment",
@@ -46,28 +49,30 @@ const TechnicalCapabilities: React.FC = () => {
               "Non-Destructive Testing Equipment",
               "Compliant with ISO and GAI-LAP"
             ].map((point, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <img src={checkIcon} alt="Check" className="w-4 h-4 mt-1" />
-                <span className="text-sm text-gray-700">{point}</span>
+              <li key={i} className="flex items-center gap-2">
+                <img src={checkIcon} alt="Check" className="w-4 h-4" />
+                <span className="text-[16px] leading-[130%] font-normal text-gray-700">{point}</span>
               </li>
             ))}
           </ul>
         </div>
-         <div>
+        <div>
           <img src={qualityImg} alt="Quality Assurance & Testing" className="rounded-lg w-full h-auto object-cover" />
         </div>
       </div>
 
       {/* Safety & Compliance heading */}
-      <h3 className="text-lg font-bold text-center">Safety & Compliance</h3>
+      <h3 className="text-[36px] leading-[41.25px] tracking-[-0.8px] font-bold text-center">
+        Safety & Compliance
+      </h3>
 
       {/* HSE Commitment */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <img src={hseImg} alt="HSE Commitment" className="rounded-lg w-full h-auto object-cover" />
         </div>
-        <div>
-          <h4 className="font-bold text-lg mb-4">HSE Commitment</h4>
+        <div style={{marginLeft:"40px"}}>
+          <h4 className="text-[48px] leading-[41.25px] tracking-[-0.8px] font-bold mb-4">HSE Commitment</h4>
           <ul className="space-y-2">
             {[
               "PPE compliance for all workers",
@@ -75,9 +80,9 @@ const TechnicalCapabilities: React.FC = () => {
               "Safety-focused project management",
               "Proactive risk assessments"
             ].map((point, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <img src={checkIcon} alt="Check" className="w-4 h-4 mt-1" />
-                <span className="text-sm text-gray-700">{point}</span>
+              <li key={i} className="flex items-center gap-2">
+                <img src={checkIcon} alt="Check" className="w-4 h-4" />
+                <span className="text-[16px] leading-[130%] font-normal text-gray-700">{point}</span>
               </li>
             ))}
           </ul>
@@ -86,26 +91,26 @@ const TechnicalCapabilities: React.FC = () => {
 
       {/* Training & Certifications */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
-       
         <div>
-          <h4 className="font-bold text-lg mb-4">Training & Certifications</h4>
+          <h4 className="text-[48px] leading-[41.25px] tracking-[-0.8px] font-bold mb-4">Training & Certifications</h4>
           <ul className="space-y-2">
             {[
               "HSE & QA training programs",
               "International certifications",
               "Employee development initiatives"
             ].map((point, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <img src={checkIcon} alt="Check" className="w-4 h-4 mt-1" />
-                <span className="text-sm text-gray-700">{point}</span>
+              <li key={i} className="flex items-center gap-2">
+                <img src={checkIcon} alt="Check" className="w-4 h-4" />
+                <span className="text-[16px] leading-[130%] font-normal text-gray-700">{point}</span>
               </li>
             ))}
           </ul>
         </div>
-         <div>
+        <div>
           <img src={trainingImg} alt="Training & Certifications" className="rounded-lg w-full h-auto object-cover" />
         </div>
       </div>
+
     </section>
   );
 };

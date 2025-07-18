@@ -17,16 +17,28 @@ const Header = () => {
         <div className="flex items-center space-x-6">
           {/* Navigation */}
           <nav className="hidden md:flex space-x-6">
-            <Link to="/about" className="text-sm font-medium text-gray-900 hover:text-blue-700">
+            <Link
+              to="/about"
+              className="font-normal text-[14px] leading-[22.4px] tracking-[-0.4px] text-gray-900 hover:text-blue-700"
+            >
               About us
             </Link>
-            <Link to="/services" className="text-sm font-medium text-gray-900 hover:text-blue-700">
+            <Link
+              to="/services"
+              className="font-normal text-[14px] leading-[22.4px] tracking-[-0.4px] text-gray-900 hover:text-blue-700"
+            >
               Services
             </Link>
-            <Link to="/technical" className="text-sm font-medium text-gray-900 hover:text-blue-700">
+            <Link
+              to="/technical"
+              className="font-normal text-[14px] leading-[22.4px] tracking-[-0.4px] text-gray-900 hover:text-blue-700"
+            >
               Technical Capabilities
             </Link>
-            <Link to="/safety" className="text-sm font-medium text-gray-900 hover:text-blue-700">
+            <Link
+              to="/safety"
+              className="font-normal text-[14px] leading-[22.4px] tracking-[-0.4px] text-gray-900 hover:text-blue-700"
+            >
               Safety & Compliance
             </Link>
           </nav>
