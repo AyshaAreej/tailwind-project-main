@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ['Manrope', 'sans-serif'],
+        eudoxus: ['"Eudoxus Sans"', 'sans-serif'],
       },
     },
   },
